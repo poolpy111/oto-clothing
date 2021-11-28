@@ -5,15 +5,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-
-const HatsPage = () => {
-  return(
-    <div>
-      <h1>hats page</h1>
-      <p>Hi</p>
-    </div>
-  ) 
-}
+import ShopPage from './pages/shop/shop.component.jsx';
 
 function App() {
   return (
@@ -21,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="hats" element={<HatsPage />} />
+          <Route path="shop" element={<ShopPage />} />
         </Routes>
       </BrowserRouter>,
     </div>
